@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Nuevo Usuario</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Registrar Nuevo Usuario</h1>
+
+        <form id="registro-form">
+            <div class="input-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="input-group">
+                <label for="primer-apellido">Primer Apellido</label>
+                <input type="text" id="primer-apellido" name="primer-apellido" required>
+            </div>
+            <div class="input-group">
+                <label for="segundo-apellido">Segundo Apellido</label>
+                <input type="text" id="segundo-apellido" name="segundo-apellido" required>
+            </div>
+            <div class="input-group">
+                <label for="numero-nomina">Número de Nómina</label>
+                <input type="text" id="numero-nomina" name="numero-nomina" required>
+            </div>
+            <div class="input-group">
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="oval-button">Crear</button>
+                <button type="button" class="oval-button" onclick="window.location.href='MostrarUsuarios.html'">Regresar</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("registro-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Registro exitoso.");
+        });
+    </script>
+</body>
+</html>

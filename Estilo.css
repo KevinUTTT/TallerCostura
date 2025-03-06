@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.app-container {
+    width: 375px; 
+    height: 667px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    width: 100%; 
+    align-items: center; 
+}
+
+.large-button {
+    width: 80%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.large-button:hover {
+    background-color: #0056b3;
+}
+
+.oval-buttons {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    width: 100%;
+}
+
+.oval-button {
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 150px;
+    height: 50px; 
+}
+
+.oval-button:hover {
+    background-color: #218838;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+    overflow-x: auto; 
+    display: block; 
+    max-height: 400px; 
+}
+
+.user-table th,
+.user-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.search-container {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#searchInput {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#searchInput:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        width: 375px; 
+        height: 667px; 
+    }
+
+    .large-button {
+        font-size: 16px;
+    }
+
+    .oval-button {
+        font-size: 14px;
+        min-width: 130px; 
+       height: 45px; 
+    }
+
+    .user-table th, .user-table td {
+        font-size: 14px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #searchInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-container {
+        width: 375px; 
+        height: 667px;
+     }
+
+    .large-button {
+        font-size: 14px;
+    }
+
+    .oval-button {
+        font-size: 12px;
+        min-width: 120px;
+        height: 40px; 
+    }
+
+    .user-table th, .user-table td {
+        font-size: 12px;
+    }
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.oval-button {
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 45%;
+}
+
+.oval-button:hover {
+    background-color: #218838;
+}
+
+a {
+    text-decoration: none;
+}
